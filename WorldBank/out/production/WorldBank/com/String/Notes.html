@@ -1,0 +1,145 @@
+Class :
+A class can be defined as a blueprint that describes the behaviour that the object of its type support.
+it is a user defined data type which contains methods and variables.
+
+Object :
+
+Object is an instance of a class. Objects has state and behaviour.
+for examples Dog is a class and barking, eating is can be object of the dog class.
+
+If we consider a dog then its state is - Name, breed, color etc.
+Behaviour of the dog is - Barking, running etc.
+
+
+Class contains the variables as
+1. Local variables - inside the scope of methods and constructors
+2. Instance Variables - inside the class but outside of the methods. These variables are initialized when the class is
+instantiated.
+3. Class Variables - inside the class, outside of the method but with a static keyword.
+
+
+
+? Recursive constructor invocation ?
+calling to this() should be first statement in the body
+this and super can not be used together
+this cannot be used within the same constructor its calling
+
+
+INHERITANCE
+--------------
+
+Inheriatnce - IS A relationship
+Why ? to achive runtime polymorphism
+to reuse the code
+
+
+Types : Single, Multilevel, Hierarchical
+
+Aggregation :code reuse is best achieved when there is no is-a relationship
+Inheritance is used when the is-a relationship maintained throughout the life of the object otherwise use aggregation
+
+
+METHOD OVERLOADING
+------------------
+
+if class has multiple methods with the same name
+> it improved the readability of the program as the number of methods name will be less
+
+two ways > change the number of arguments > change the data type
+{can not be done by changing the return type of the methods-
+ERROR message - method is already defined in the class ...}
+
+Question : What is type promotion ????
+
+METHOD OVERRIDING
+-----------------
+> used for runtime polymorphism
+> same method name, same parameters, IS-A relationship
+
+
+
+COVARIANT RETURN TYPE
+---------------------
+method overriding is possible while changing the return type
+using non- primitive return type
+such as class
+
+SUPER Keyword
+---------------
+super refers to the immediate parent class object , method , constructor.
+
+INSTANCE INITIALIZER BLOCK  ?????---??????
+---------------------------
+{
+System.out.println("Block );
+}
+
+FINAL
+---------
+it can be class, method or variable as final
+class can not be inherited , method can not be overridden , variable can not be changed.
+
+Blank final variable - it is initialized at the time of object creation
+it can be initialized but only in constructor
+
+
+POLYMORPHISM
+---------------
+compile time / run time polymorphism
+
+overload a static method is an example of compile time polymorphism
+
+
+What is Upcasting ?and downcasting ????
+if the ref variable of Parent class refers to the objet of the child class
+Class A{} class B extends A{} A a = new B(); // this is the example of upcasting
+
+runtime polymorphism can not be achived by data memebers
+
+
+STATIC BINDING (Early Binding ) ???????? ---????????
+----------------
+static binding - when type of the object is determined at the compiled time.
+if there is any private, static or final method in the class, there is static binding
+
+dynamic binding - when the type of the object is determined at the runtime
+
+
+INSTANCE_OF operator  ?????? - ??????????????
+--------------------
+
+
+ABSTRACTION
+-----------------
+abstract class - class with abstract keyword , it can have both abstract and non abstract methods
+It is the process of hiding the implementation details and showing only the functionality to the user
+
+abstract class - it can not be instantiated or can not create the object  , it can have constructors and static methods
+abstract methods - it does not have implementation
+Mostly we do not know about the implementation class(hidden to the end user) and an object of the
+implementation class is provided by the factory method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
